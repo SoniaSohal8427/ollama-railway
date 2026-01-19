@@ -7,4 +7,4 @@ ENV OLLAMA_PORT=11434
 EXPOSE 11434
 
 # Start Ollama server
-CMD ["ollama", "serve"]
+CMD ["serve"]
