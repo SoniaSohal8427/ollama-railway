@@ -4,6 +4,4 @@ ENV OLLAMA_HOST=0.0.0.0
 
 EXPOSE 11434
 
-RUN ollama pull smollm2:135m
-
-CMD ["ollama", "serve"]
+CMD ["sh", "-c", "ollama serve & sleep 10 && ollama pull smollm2:135m && wait"]
