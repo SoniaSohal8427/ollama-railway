@@ -4,4 +4,6 @@ ENV OLLAMA_HOST=0.0.0.0
 
 EXPOSE 11434
 
-CMD ["sh", "-c", "ollama serve & sleep 10 && ollama pull smollm2:135m && wait"]
+ENTRYPOINT []
+
+CMD sh -c "ollama serve & sleep 10 && ollama pull smollm2:135m && wait"
